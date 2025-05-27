@@ -1,14 +1,9 @@
-let flag = false;
 function insert(str) {
-    if (flag){
-        clearall()
-    }
     let d = document.getElementById("disp")
     if(str != '=')
     d.value += str;
     else {
         d.value = eval(d.value);
-        flag = true;
     }
 }
 
